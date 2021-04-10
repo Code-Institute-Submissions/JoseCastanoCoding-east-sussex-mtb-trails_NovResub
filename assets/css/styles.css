@@ -18,6 +18,8 @@ body {
 
 #header {
     color: #ff3b00eb;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 
@@ -27,6 +29,7 @@ body {
 
 #top-heading {
     padding-bottom: 35px;
+    padding-top: 35px;
 }
 
 #logo-and-heading {
@@ -34,7 +37,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    align-content: center;
 }
 
 /*................................................... Colour Scheme*/
