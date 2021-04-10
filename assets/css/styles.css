@@ -8,6 +8,7 @@ body {
     padding: 0;
     margin: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 /*....................Colour Scheme................................*/
@@ -39,4 +40,67 @@ body {
     align-items: center;
 }
 
-/*................................................... Colour Scheme*/
+/*................................................... Main Heading*/
+
+/*....................Hero Image................................*/
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#main-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.dropdown-skills {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.dropdown-fitness {
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*................................................... Hero Image*/
+
+
+
+
+
+
+
+
+/*....................Footer................................*/
+
+#footer {
+    background-color: rgb(26, 23, 23);
+}
+
+#footer-message {
+    color: #ff3b00eb;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#trademark-and-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas {
+    font-size: -webkit-xxx-large;
+    color: #ff3b00eb;
+    padding-right: 75px;
+}
+
+/*................................................... Footer*/
