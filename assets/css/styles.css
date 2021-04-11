@@ -72,10 +72,23 @@ body {
 /*................................................... Hero Image*/
 
 
+/*....................Stanmer Park.html................................*/
+
+.main-image-stanmerpark {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#stanmer-park {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
 
 
-
-
+/*................................................... Stanmer Park.html*/
 
 
 /*....................Footer................................*/
