@@ -25,10 +25,12 @@
     <section class="container-fluid" id="top-heading">
         <div id="logo-and-heading">
             <div>
-                <img src="assets/images/logo.PNG" alt="logo" style="padding-right: 75px;">
+                <a href="index.html">
+                    <img src="assets/images/logo.PNG" alt="logo" style="padding-right: 75px;">
+                </a>
             </div>
             <div>
-                <h1 id="header">East Sussex MTB Trails</h1>
+                <h1 id="header">Stanmer Park</h1>
             </div>
         </div>
     </section>
@@ -44,6 +46,15 @@
             <div id="stanmer-park">
                 <img src="assets/images/stanmer-park.jpg" alt="stanmer-park" width="50%" height="50%"
                     style="object-fit: cover;">
+            </div>
+            <div id="stanmerpark-trails">
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+
+            <div id="stanmerpark-map">
+
             </div>
         </div>
     </section>
@@ -76,7 +87,20 @@
 
 
 
+    <script>
+        function initMap() {
+            const stanmerPark = { lat: 50.866907, lng: -0.099015 };
+            const map = new google.maps.Map(document.getElementById("stanmerpark-map"), {
+                zoom: 4,
+                center: stanmerPark,
+            });
 
+            const marker = new google.maps.Marker({
+                position: stanmerPark,
+                map: map,
+            });
+        }
+    </script>
 
 
 
@@ -84,4 +108,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+    <script>
+        var APIKey = "AIzaSyDvFWvwW7soq4FvEw_A-AUOHh2BeJKNgaI";
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFWvwW7soq4FvEw_A-AUOHh2BeJKNgaI&callback=initMap&libraries=&v=weekly"
+        async></script>
 </body>

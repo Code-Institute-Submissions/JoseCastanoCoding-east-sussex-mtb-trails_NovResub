@@ -82,13 +82,75 @@ body {
 
 #stanmer-park {
     position: absolute;
-    top: 55%;
+    top: 75%;
     left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+#stanmerpark-map {
+    height: 50%;
+    width: 35%;
+    position: absolute;
+    top: 75%;
+    left: 80%;
     transform: translate(-50%, -50%);
 }
 
 
 /*................................................... Stanmer Park.html*/
+
+/*....................Friston Forest.html................................*/
+
+#main-image-fristonforest {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#friston-forest {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+#fristonforest-map {
+    height: 50%;
+    width: 35%;
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+/*................................................... Friston Forest.html*/
+
+/*....................Surrey Hills.html................................*/
+
+#main-image-surreyhills {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#surrey-hills {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+#surreyhills-map {
+    height: 50%;
+    width: 35%;
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*................................................... Surrey Hills.html*/
 
 
 /*....................Footer................................*/
