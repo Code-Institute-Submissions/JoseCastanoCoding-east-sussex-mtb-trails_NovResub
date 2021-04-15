@@ -1,9 +1,27 @@
-var trails = ["Stanmer Park", "Friston Forest", "Surrey Hills"];
+function getPark() {
+    var skillLevel = document.getElementById("skill-level");
+    var fitnessLevel = document.getElementById("fitness-level");
 
-function trailChoice() {
-    if (this.document.getElementById("skill-level").selectedValue[0] && this.document.getElementById("fitness-level").selectedValue[0]) {
-        document.getElementById("trailChoice").textContent(trails[0]);
-    } else {
-        console.log(trails);
-    }
-}
+    var skillDropdownValue = skillLevel.options[skillLevel.selectedIndex].value;
+    var fitnessDropdownValue = fitnessLevel.options[fitnessLevel.selectedIndex].value;
+
+    if (skillDropdownValue === "Begginer" && fitnessDropdownValue === "Average") {
+        document.getElementById("trailChoice").value = "Stanmer Park";
+    } else if (skillDropdownValue === "Begginer" && fitnessDropdownValue === "Fit") {
+        document.getElementById("trailChoice").value = "Stanmer Park";
+    } else if (skillDropdownValue === "Begginer" && fitnessDropdownValue === "SuperFit") {
+        document.getElementById("trailChoice").value = "Friston Forest";
+    } else if (skillDropdownValue === "Intermediate" && fitnessDropdownValue === "Average") {
+        document.getElementById("trailChoice").value = "Stanmer Park";
+    } else if (skillDropdownValue === "Intermediate" && fitnessDropdownValue === "Fit") {
+        document.getElementById("trailChoice").value = "Friston Forest";
+    } else if (skillDropdownValue === "Intermediate" && fitnessDropdownValue === "SuperFit") {
+        document.getElementById("trailChoice").value = "Surrey Hills";
+    } else if (skillDropdownValue === "Advanced" && fitnessDropdownValue === "Average") {
+        document.getElementById("trailChoice").value = "Stanmer Park";
+    } else if (skillDropdownValue === "Advanced" && fitnessDropdownValue === "Fit") {
+        document.getElementById("trailChoice").value = "Friston Forest";
+    } else if (skillDropdownValue === "Advanced" && fitnessDropdownValue === "SuperFit") {
+        document.getElementById("trailChoice").value = "Surrey Hills";
+    };
+};
