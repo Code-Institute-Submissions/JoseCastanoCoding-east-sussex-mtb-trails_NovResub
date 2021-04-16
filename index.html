@@ -43,7 +43,7 @@
             <div class="dropdown-skills">
                 <form>
                     <b class="bold-text">So, how good are you at riding your mtb?</b>
-                    <select id="skill-level" onchange="getPark()">
+                    <select id="skill-level" onchange="setTimeout(getPark, 4000);">
                         <option disabled selected>What's your skill level?</option>
                         <option value="Begginer">Begginer</option>
                         <option value="Intermediate">Intermediate</option>
@@ -54,7 +54,7 @@
             <div class="dropdown-fitness">
                 <form>
                     <b class="bold-text">What's your current shape?</b>
-                    <select id="fitness-level" onchange="getPark()">
+                    <select id="fitness-level" onchange="setTimeout(getPark, 4000);">
                         <option disabled selected>What's your fitness level?</option>
                         <option value="Average">Average</option>
                         <option value="Fit">Fit</option>
@@ -64,6 +64,9 @@
                         <input type="text" id="trailChoice" size="20">
                     </p>
                 </form>
+            </div>
+            <div class="trail">
+                <h1 id="trail-heading"></h1>
             </div>
         </div>
     </section>

@@ -73,6 +73,12 @@ body {
     color: #ff3b00eb;
 }
 
+.trail {
+    position: absolute;
+    top: 10rem;
+    left: 16px;
+}
+
 
 /*................................................... Hero Image*/
 
