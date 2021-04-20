@@ -75,8 +75,28 @@ body {
 
 .trail {
     position: absolute;
-    top: 10rem;
-    left: 16px;
+    top: 2rem;
+    left: 52rem;
+    color: #ff3b00eb;
+    background-color: rgb(26, 23, 23);
+}
+
+.buttons {
+    position: absolute;
+    top: 2rem;
+    left: 54rem;
+    display: none;
+}
+
+.trail-picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    size: 25px;
+}
+
+#trail-map {
+    position: absolute;
 }
 
 

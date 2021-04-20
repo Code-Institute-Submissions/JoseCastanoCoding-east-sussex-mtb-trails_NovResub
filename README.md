@@ -1,12 +1,12 @@
 <h1 align="center"><strong>East Sussex MTB Trails</strong></h1>
 
-<h2>1st Milestone Project</h2>
+<h2>2nd Milestone Project</h2>
 
 [View the live project here](https://)
 
 <img src="" width="600" height="400" />
 
-East Sussex MTB Trails is a website aimed to 
+East Sussex MTB Trails is a website aimed to help mountain bike riders to find new trails to ride in East Sussex, UK. The visitors will be given the option to select both their skill and fitness levels, the site will collate the choices of each rider, and return the best trail that suits the rider selections. 
 
 The website has been designed to be responsive, intuitive and accessible on a range of devices, including smartphones, tablets and desktops/laptops.
 
@@ -47,24 +47,22 @@ The website has been designed to be responsive, intuitive and accessible on a ra
 
 ## User Experience
 
-East Sussex MTB Trails 
+East Sussex MTB Trails uses the visitor choices from the dropdown menus, and displays the mountain bike trail that suits the rider characteristics, along with its location (presented to the visitor in a map) and 3 bullet points showing key information about such trail.
 
 
 ## User stories
 
 -  ### <h3>First Time Visitor Goals</h3>
 
-    1. As a First Time Visitor, I want to browse through the catalogue of products and make enquiries for items I want to purchase.
-    2. As a First Time Visitor, I want to analyse the site and evaluate how easy it is to navigate throught it in order to check the products and content.
-    3. As a First Time Visitor, I want to verify testimonials about the quality of the service and find out what real people think about the website. I will also corroborate
-    all their social media channels by clicking on the social media icons displayed on the site, with the aim of getting a deeper insight of their followings on each of the social
-    media platforms they are part of. 
+    1. As a First Time Visitor, I want to find out which mountain bike trail I should be attempting to ride, based on my current level of skills and fitness. Once I know which trail is suitable for me, I want to make some notes of the key characteristics of such trail 
+    2. As a First Time Visitor, I want to plan directions to get to the location where the mountain bike trail is. 
+    3. As a First Time Visitor, I want to get in touch with the real people behind East Sussex MTB Trails, and ask some questions about a particular trail.
 
 -  ### <h3>Returning Visitor Goals</h3>
 
-    1. As a Returning Visitor, I might want to place an order or follow up on an enquiry I recently made.
-    2. As a Returning Visitor, I want to check any possible new releases or products available on the website.
-    3. As a Returning Visitor, I want to keep up with any promotions running via the official social media accounts of The Vinyl Aficionado website.
+    1. As a Returning Visitor, since my set of skills and fitness level might have changed from my first visit, I could be using this site to check out other trails to ride, and 
+    2. As a Returning Visitor, I might want to plan directions to get to the location where any other trails are. 
+    3. As a Returning Visitor, 
 
 ## Design
 
@@ -108,7 +106,7 @@ I used the site [Unsplash](https://unsplash.com/) to download all my images, wit
 
 ## Wireframes
 
-All the wireframes I drew can be found in the following [link](https://photos.google.com/u/2/album/AF1QipOiJG6l1mZ5Ftj5CDdoiU8IgjuenrQRaPbL6DVx)
+All the wireframes I drew can be found in the following [link](/workspace/east-sussex-mtb-trails/wireframes)
 
 ## Features
 

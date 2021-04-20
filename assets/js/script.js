@@ -5,35 +5,40 @@ function getPark() {
     var skillDropdownValue = skillLevel.options[skillLevel.selectedIndex].value;
     var fitnessDropdownValue = fitnessLevel.options[fitnessLevel.selectedIndex].value;
 
+    const trailChoice = document.getElementById("trailChoice");
+    const trailHeading = document.getElementById("trail-heading");
+    let location;
+
+
     if (skillDropdownValue === "Begginer" && fitnessDropdownValue === "Average") {
-        document.getElementById("trailChoice").value = "Stanmer Park";
-        setTimeout(function () { getPark(document.getElementById("trail-heading").textContent = "Stanmer Park"); }, 3500);
+        location = locations["stanmerPark"];
     } else if (skillDropdownValue === "Begginer" && fitnessDropdownValue === "Fit") {
-        document.getElementById("trailChoice").value = "Stanmer Park";
-        setTimeout(function () { getPark(document.getElementById("trail-heading").textContent = "Stanmer Park"); }, 3500);
+        location = locations["stanmerPark"];
     } else if (skillDropdownValue === "Begginer" && fitnessDropdownValue === "SuperFit") {
-        document.getElementById("trailChoice").value = "Friston Forest";
-        setTimeout(function () { getPark(document.getElementById("trail-heading").textContent = "Friston Forest"); }, 3500);
+        location = locations["fristonForest"];
     } else if (skillDropdownValue === "Intermediate" && fitnessDropdownValue === "Average") {
-        document.getElementById("trailChoice").value = "Stanmer Park";
-        setTimeout(function () { getPark(document.getElementById("trail-heading").textContent = "Stanmer Park"); }, 3500);
+        location = locations["stanmerPark"];
     } else if (skillDropdownValue === "Intermediate" && fitnessDropdownValue === "Fit") {
-        document.getElementById("trailChoice").value = "Friston Forest";
-        setTimeout(function () { getPark(document.getElementById("trail-heading").textContent = "Friston Forest"); }, 3500);
+        location = locations["fristonForest"];
     } else if (skillDropdownValue === "Intermediate" && fitnessDropdownValue === "SuperFit") {
-        document.getElementById("trailChoice").value = "Surrey Hills";
-        setTimeout(function () { getPark(document.getElementById("trail-heading").textContent = "Surrey Hills"); }, 3500);
+        location = locations["surreyHills"];
     } else if (skillDropdownValue === "Advanced" && fitnessDropdownValue === "Average") {
-        document.getElementById("trailChoice").value = "Stanmer Park";
-        setTimeout(function () { getPark(document.getElementById("trail-heading").textContent = "Stanmer Park"); }, 3500);
+        location = locations["stanmerPark"];
     } else if (skillDropdownValue === "Advanced" && fitnessDropdownValue === "Fit") {
-        document.getElementById("trailChoice").value = "Friston Forest";
-        setTimeout(function () { getPark(document.getElementById("trail-heading").textContent = "Friston Forest"); }, 3500);
+        location = locations["fristonForest"];
     } else if (skillDropdownValue === "Advanced" && fitnessDropdownValue === "SuperFit") {
-        document.getElementById("trailChoice").value = "Surrey Hills";
-        setTimeout(function () { getPark(document.getElementById("trail-heading").textContent = "Surrey Hills"); }, 3500);
+        location = locations["surreyHills"];
     };
+    trailChoice.value = location.displayName;
+    trailHeading.textContent = location.displayName;
+    document.getElementById("picture").setAttribute("src", location["Image"]);
 };
+
+
+
+
+
+
 
 
 
