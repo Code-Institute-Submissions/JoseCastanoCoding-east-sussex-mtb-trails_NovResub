@@ -1,13 +1,16 @@
-function initMap(GeolocationCoordinates) {
-    const map = new google.maps.Map(document.getElementById("trail-map"), {
+
+let map;
+
+function initMap(location) {
+    map = new google.maps.Map(document.getElementById("trail-map"), {
+        center: location["coords"],
         zoom: 4,
-        center: location,
     });
 
-    initMap(location["GeolocationCoordinates"]);
-
     const marker = new google.maps.Marker({
-        position: location,
+        position: location["coords"],
         map: map,
     });
 }
+
+

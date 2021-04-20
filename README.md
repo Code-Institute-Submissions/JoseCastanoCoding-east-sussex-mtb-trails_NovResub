@@ -6,7 +6,7 @@
 
 <img src="" width="600" height="400" />
 
-East Sussex MTB Trails is a website aimed to help mountain bike riders to find new trails to ride in East Sussex, UK. The visitors will be given the option to select both their skill and fitness levels, the site will collate the choices of each rider, and return the best trail that suits the rider selections. 
+East Sussex MTB Trails is a website aimed to help mountain bike riders to find new trails to ride in East Sussex, UK. The visitors will be given the option to select both their skill and fitness levels, the site will collate the choices of each visitor, and return the best trail that suits the rider selections. 
 
 The website has been designed to be responsive, intuitive and accessible on a range of devices, including smartphones, tablets and desktops/laptops.
 
@@ -54,22 +54,25 @@ East Sussex MTB Trails uses the visitor choices from the dropdown menus, and dis
 
 -  ### <h3>First Time Visitor Goals</h3>
 
-    1. As a First Time Visitor, I want to find out which mountain bike trail I should be attempting to ride, based on my current level of skills and fitness. Once I know which trail is suitable for me, I want to make some notes of the key characteristics of such trail 
+    1. As a First Time Visitor, I want to find out which mountain bike trail I should be attempting to ride, based on my current level of skills and fitness. Once I know which trail is suitable for me, I want to make some notes of the key characteristics of such trail.
     2. As a First Time Visitor, I want to plan directions to get to the location where the mountain bike trail is. 
     3. As a First Time Visitor, I want to get in touch with the real people behind East Sussex MTB Trails, and ask some questions about a particular trail.
 
 -  ### <h3>Returning Visitor Goals</h3>
 
-    1. As a Returning Visitor, since my set of skills and fitness level might have changed from my first visit, I could be using this site to check out other trails to ride, and 
+    1. As a Returning Visitor, since my set of skills and fitness level might have changed from my first visit, I could be using this site to check out other trails to ride, and make some notes about the key characteristics of the new trail I would like to ride.
     2. As a Returning Visitor, I might want to plan directions to get to the location where any other trails are. 
-    3. As a Returning Visitor, 
+    3. As a Returning Visitor, I would like to keep interacting with the owners of the site, by sending them an enquiry about anything in regards to the information displayed about the trail, location or key characteristics of it.
 
 ## Design
 
 - ### <h3>Colour Scheme</h3>
 
-I did some research online and came across an article about the 50 best website color schemes for 2021 - [link here](https://designshack.net/articles/trends/best-website-color-schemes/). I picked a combination of colours that I consider to be eye-catching,
-and that it has a certain e-commerce retail finish. 
+I wanted to keep the design of the website simple and neat. I have used a hero image to be the main background of the website, please see below:
+
+<img src="assets/images/hero-image.jpg" width="600" height="400" />
+
+I picked a combination of colours that I consider to be eye-catching, and that does not take the attention of the user away from the main goal of the website. 
 
 <img src="assets/images/readme-images-and-documentation/PhototasticCollageTVAcolourscheme.jpg" width="600" height="400" />
 

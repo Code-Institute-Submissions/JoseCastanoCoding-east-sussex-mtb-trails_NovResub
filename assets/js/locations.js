@@ -1,7 +1,7 @@
 const locations = {
     stanmerPark: {
         displayName: "Stanmer Park",
-        GeolocationCoordinates: { lat: 50.867329864, lng: -0.101832926 },
+        coords: { lat: 50.867329864, lng: -0.101832926 },
         Image: "assets/images/stanmer-park.jpg",
         Uphill: "10.67km",
         Downhill: "8.42km",
@@ -9,7 +9,7 @@ const locations = {
     },
     fristonForest: {
         displayName: "Friston Forest",
-        GeolocationCoordinates: { lat: 50.77870178, lng: 0.18987598 },
+        coords: { lat: 50.77870178, lng: 0.18987598 },
         Image: "assets/images/friston-forest.jpg",
         Uphill: "17.88km",
         Downhill: "12.67km",
@@ -17,7 +17,7 @@ const locations = {
     },
     surreyHills: {
         displayName: "Surrey Hills",
-        GeolocationCoordinates: { lat: 51.22650146, lng: -0.45299972 },
+        coords: { lat: 51.22650146, lng: -0.45299972 },
         Image: "assets/images/surrey-hills.jpg",
         Uphill: "24.77km",
         Downhill: "20.14km",

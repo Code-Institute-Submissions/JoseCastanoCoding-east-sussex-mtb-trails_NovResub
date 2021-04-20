@@ -32,6 +32,7 @@ function getPark() {
     trailChoice.value = location.displayName;
     trailHeading.textContent = location.displayName;
     document.getElementById("picture").setAttribute("src", location["Image"]);
+    initMap(location) = document.getElementById("trail-map").setAttribute("trail-map", location["coords"]);
 };
 
 

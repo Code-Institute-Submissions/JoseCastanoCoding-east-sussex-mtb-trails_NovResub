@@ -97,6 +97,10 @@ body {
 
 #trail-map {
     position: absolute;
+    top: 2rem;
+    left: 54rem;
+    height: 50%;
+    width: 50%;
 }
 
 
