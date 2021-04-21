@@ -68,44 +68,30 @@ East Sussex MTB Trails uses the visitor choices from the dropdown menus, and dis
 
 - ### <h3>Colour Scheme</h3>
 
-I wanted to keep the design of the website simple and neat. I have used a hero image to be the main background of the website, please see below:
+I wanted to keep the design of the website simple and neat. I have applied a hero image to be the main background of the website, please see below:
 
 <img src="assets/images/hero-image.jpg" width="600" height="400" />
 
 I picked a combination of colours that I consider to be eye-catching, and that does not take the attention of the user away from the main goal of the website. 
 
-<img src="assets/images/readme-images-and-documentation/PhototasticCollageTVAcolourscheme.jpg" width="600" height="400" />
+<img src="assets/images/colours.jpg" width="600" height="400" />
 
-There are 4 dominant colours that can be identified on my site:
+There are 2 dominant colours that can be identified on my site:
 
-- <strong>Deep emerald (#1FC58E)</strong> : Used as the background colour for the first slide of the carousel, and as the font color of the remaining slides within the carousel.
-It is the main background colour of all the pages but the home page. Also used as background colour for all the call-to-action buttons.
-- <strong>Color Hex Yellow (#FAE62D)</strong> : Used as the background colour of the first call-to-action button on the first slide of the carousel. It is the colour I used for the borders
-of all the images displayed on the following pages: "Home", "About Me" and "Shop".
-- <strong>Color Hex Black (#191414)</strong> : Used as the font colour for the text on the first slide of the carousel, headings and subheadings and all the text on the website with the exception of the navigation bar and footer.
-- <strong>Radial Gradient</strong> : Used as the background colour of both the navigation bar and footer. Combination used: rgb(126,126,138) + radial-gradient(circle, rgba(126,126,138,1) 0%, rgba(255,255,255,1) 70%, rgba(233,233,233,1) 100%).
-
-Other colours I have used:
-
-- <strong>Color Hex Dark Grey (#777777)</strong> : Used as the font colour for the items of the navigation bar and the items in the footer.
-- <strong>Color Hex White (#ffffff)</strong> : Used for the hover effect on all the buttons and for the items included in the dropdown menu of the shop.
-- <strong>RGB rgb(220, 224, 212)</strong> : Used as the background colour of the home page section just underneath the carousel slider. 
-
-<img src="assets/images/readme-images-and-documentation/secondarycolourcombo.jpg" width="200" height="200" />
+- <strong>Black galvanised (rgb(26, 23, 23))</strong> : Used as the background colour for the header, footer and the drop down menus as well as the result box (where the trail is revealed once the user has made their choices).
+- <strong>Intense Orange (#ff3b00eb)</strong> : Used as the colour of the text displayed on the header, footer and the drop down menus as well as the result box (where the trail is revealed once the user has made their choices).
 
 - ### <h3>Typography</h3>
 
 The font I used for all the website is "Space Grotesk".
 
-<img src="assets/images/readme-images-and-documentation/Font.png" width="1000" height="150" />
+<img src="assets/images/font.PNG" width="1000" height="150" />
 
 - ### <h3>Imagery</h3>
 
-All the images I used for my project can be found in the following [link](https://photos.google.com/u/2/album/AF1QipPOBUIe2thesg1mvdwvRcdRUe9_2owb3LXCp19p) 
-Every page of the website has its GitHub folder that contains all the pictures I used. 
+All the images I used for my project can be found in the following [link](assets/images) 
 
-I used the site [Unsplash](https://unsplash.com/) to download all my images, with the exception of the ones in the page "about me", I own those ones.
-
+I used the site [Unsplash](https://unsplash.com/) to download all my images, with the exception of the ones corresponding to the mountain bike trails I have based my website on. I acquired those one via facebook groups where I am a member of.
 
 ## Wireframes
 
@@ -113,43 +99,74 @@ All the wireframes I drew can be found in the following [link](/workspace/east-s
 
 ## Features
 
-The site counts with 6 pages in total. There is a static page (shop) that serves as a dropdown menu, and that contains 3 sub-pages.
+The site counts with 1 pages in total, where the user can choose from two
 
 ### Existing Features
 
 - It is responsive to screen size thanks to bootstrap and the media queries I have put in place.
 
-- The navbar is not fixed to the top of the screen, and collapses into a hamburger button on mobile devices/smartphones.
+- There are 9 possible combinations of user choices from the drop-downs, as per the table below:
 
-- The carousel slider on the home page provides the visitors with a nice visual animation, as well as giving them the option to sign up for the newsletter by clicking the button on the first slide.
+    SKILL LEVEL | FITNESS LEVEL | MTB TRAIL
+    ----------- | ------------- | ---------
+    BEGGINER | AVERAGE | STANMER PARK  
+    BEGGINER | FIT | STANMER PARK
+    BEGGINER | SUPER FIT! | FRISTON FOREST
+    INTERMEDIATE | AVERAGE | STANMER PARK
+    INTERMEDIATE | FIT | FRISTON FOREST
+    INTERMEDIATE | SUPER FIT! | SURREY HILLS
+    ADVANCED | AVERAGE | STANMER PARK
+    ADVANCED | FIT | FRISTON FOREST
+    ADVANCED | SUPER FIT! | SURREY HILLS
 
-- There are other 3 call-to-action buttons that can be found on the home page, taking the user to visit all the sections contained in the shop.
+ 1.	If the user selects beginner (skills) and average (fitness levels), the mtb trail we recommend is Stanmer Park.
+ 2. If the user selects beginner (skills) and fit (fitness levels), the mtb trail we recommend is Stanmer Park.
+ 3. If the user selects beginner (skills) and super fit! (fitness levels), the mtb trail we recommend is Friston Forest.
+ 4. If the user selects intermediate (skills) and average (fitness levels), the mtb trail we recommend is Stanmer Park.
+ 5. If the user selects intermediate (skills) and fit (fitness levels), the mtb trail we recommend is Friston Forest.
+ 6. If the user selects intermediate (skills) and super fit! (fitness levels), the mtb trail we recommend is Surrey Hills.
+ 7. If the user selects advanced (skills) and average (fitness levels), the mtb trail we recommend is Stanmer Park.
+ 8. If the user selects advanced (skills) and fit (fitness levels), the mtb trail we recommend is Friston Forest.
+ 9. If the user selects advanced (skills) and super fit! (fitness levels), the mtb trail we recommend is Surrey Hills.
 
-- Hover animations are used on the navigation items in the navigation menu (underline from left), and the social media icons (float shadow) in the footer section.
+- RESULTS BASED ON USER CHOSEN OPTIONS
 
-- All the products listed in the page shop, under the categories of vinyl and accessories, are provided via my own website [therecordbloke.com](https://therecordbloke.com). All the clothing products are provided via another third 
-party called [wastedheroes-shop.com](https://www.wastedheroes-shop.com/). The call-to-action buttons will allow the user to go directly to both sites and place orders. 
+1. If the result is Stanmer Park, the home page will display a picture of Stanmer Park and 3 interactive buttons to show:
+    - 1.1 The distance to cover going uphill.
+    - 1.2 The distance to cover going downhill.
+    - 1.3 Tips about Stanmer Park trails.
+- The home page will, also, display a google maps api integration and a contact form, using mailjs api integration to get in touch with us to find out more about the trails at Stanmer Park.
+
+2. If the result is Friston Forest, the home page will display a picture of Friston Forest and 3 interactive buttons to show:
+    - 2.1 The distance to cover going uphill.
+    - 2.2 The distance to cover going downhill.
+    - 2.3 Tips about Friston Forest trails.
+- The home page will, also, display a google maps api integration and a contact form, using mailjs api integration to get in touch with us to find out more about the trails at       Friston Forest.
+
+3. If the result is Surrey Hills, the home page will display a picture of Surrey Hills and 3 interactive buttons to show:
+    - 2.1 The distance to cover going uphill.
+    - 2.2 The distance to cover going downhill.
+    - 2.3 Tips about Surrey Hills trails.
+- The home page will, also, display a google maps api integration and a contact form, using mailjs api integration to get in touch with us to find out more about the trails at Surrey Hills.
 
 ### Features left to implement
 
-- Call-to-action on the form located on the page "Contact Us" and submitting details of potential users to a database.
+- 
   
  ##### back to [contents](#table-of-contents)
 
 ---
 ## Technologies Used
 
-- Languages : HTML, CSS and Bootstrap framework (Navbar uses JavaScript).
+- Languages : HTML, CSS, Bootstrap framework and Javascript.
 
 - IDE: [Gitpod](https://www.gitpod.io/) (runs Visual Studio code online).
 
 - Version control: Git on [Gitpod](https://www.gitpod.io/) and [Github](https://github.com/).
 
-- Wireframe: [Balsamiq](https://balsamiq.com/)
+- Wireframes: [Balsamiq](https://balsamiq.com/)
 
 - Browser Developer tools : [Google Chrome](https://www.google.com/chrome)
-
-- Gradient generator: [CSS Gradient](https://cssgradient.io/gradient-backgrounds/)
 
 - Fonts : [Google Fonts](https://fonts.google.com/)
 
@@ -157,7 +174,9 @@ party called [wastedheroes-shop.com](https://www.wastedheroes-shop.com/). The ca
 
 - Hover effects : [Hover.css](https://ianlunn.github.io/Hover/#effects)
 
-- Colour Schemer : [colourschemer](https://www.colorschemer.com/rgb-color-codes/)
+- Colour Picker : [colourpicker](https://www.w3schools.com/colors/colors_picker.asp)
+
+- RGB Generator : [rgbgenerator](https://www.coolgenerator.com/rgb-color-generator)
 
 ##### back to [contents](#table-of-contents)  
 
