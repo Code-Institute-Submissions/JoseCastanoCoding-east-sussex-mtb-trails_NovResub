@@ -37,53 +37,46 @@
 
     <!--Main image and drop-down menus to choose from-->
 
-    <section class="container-fluid">
-        <div class="main-image">
-            <img src="assets/images/hero-image.jpg" alt="mtb" style="width: 100%; height: auto;">
-            <div class="dropdown-skills">
-                <form>
-                    <b class="bold-text">So, how good are you at riding your mtb?</b>
-                    <select id="skill-level" onchange="getPark();">
-                        <option disabled selected>What's your skill level?</option>
-                        <option value="Begginer">Begginer</option>
-                        <option value="Intermediate">Intermediate</option>
-                        <option value="Advanced">Advanced</option>
-                    </select>
-                </form>
-            </div>
-            <div class="dropdown-fitness">
-                <form>
-                    <b class="bold-text">What's your current shape?</b>
-                    <select id="fitness-level" onchange="getPark();">
-                        <option disabled selected>What's your fitness level?</option>
-                        <option value="Average">Average</option>
-                        <option value="Fit">Fit</option>
-                        <option value="SuperFit">Super Fit!</option>
-                    </select>
-                    <p class="bold-text" style="margin-top: 4rem;"><b>Your recommended mtb trail is:</b>
-                        <input type="text" id="trailChoice" size="20">
-                    </p>
-                </form>
-            </div>
-            <div class="trail">
-                <h1 id="trail-heading"></h1>
-            </div>
-            <div class="trail-picture">
-                <img src="" alt="" id="picture" style="width: 500px;">
-            </div>
-            <div class="buttons">
-                <button id="uphill">Uphill Distance</button>
-                <button id="downhill">Downhill Distance</button>
-                <button id="tips">Tips For The Trail!</button>
-            </div>
-            <div id="trail-map">
-
-            </div>
+    <div class="hero-image">
+        <div class="hero-text-dropdown">
+            <form style="margin-bottom: 35px;">
+                <b class="bold-text">So, how good are you at riding your mtb?</b>
+                <select id="skill-level" onchange="getPark();">
+                    <option disabled selected>What's your skill level?</option>
+                    <option value="Begginer">Begginer</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </form>
+            <form style="margin-bottom: 35px;">
+                <b class="bold-text">What's your current shape?</b>
+                <select id="fitness-level" onchange="getPark();">
+                    <option disabled selected>What's your fitness level?</option>
+                    <option value="Average">Average</option>
+                    <option value="Fit">Fit</option>
+                    <option value="SuperFit">Super Fit!</option>
+                </select>
+            </form>
+            <p class="bold-text"><b>Your recommended mtb trail is:</b>
+                <input type="text" id="trailChoice" size="20">
+            </p>
         </div>
-    </section>
+        <div class="hero-text-trailHeading">
+            <h1 id="trail-heading"></h1>
+        </div>
+        <div class="hero-text-trailPicture">
+            <img src="" alt="" id="picture" width="400px" height="400px" />
+        </div>
+        <div class="buttons">
+            <button id="uphill">Uphill Distance</button>
+            <button id="downhill">Downhill Distance</button>
+            <button id="tips">Tips For The Trail!</button>
+        </div>
+        <div class="hero-text-map" id="trail-map">
 
-    <!--/. Main image and drop-down menus to choose from -->
+        </div>
 
+    </div>
 
     <!--Footer-->
 

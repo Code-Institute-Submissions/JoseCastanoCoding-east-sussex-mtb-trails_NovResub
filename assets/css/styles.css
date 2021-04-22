@@ -44,30 +44,52 @@ body {
 
 /*....................Hero Image................................*/
 
-.container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.main-image {
-    position: relative;
-    text-align: center;
-    color: white;
+.hero-image {
+    height: 100vh;
+    background: url(/assets/images/hero-image.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
 }
 
-.dropdown-skills {
+.hero-text-dropdown {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 8px;
-    left: 16px;
+    top: 16%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
 }
 
-.dropdown-fitness {
+.hero-text-trailHeading {
+    display: flex;
     position: absolute;
-    top: 5rem;
-    left: 16px;
+    top: 16%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    color: #ff3b00eb;
+    background-color: rgb(26, 23, 23);
+}
+
+.hero-text-trailPicture {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-map {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    height: 400px;
+    width: 400px;
+    transform: translate(-50%, -50%);
 }
 
 .bold-text {
@@ -76,36 +98,12 @@ body {
     color: #ff3b00eb;
 }
 
-.trail {
-    position: absolute;
-    top: 2rem;
-    left: 52rem;
-    color: #ff3b00eb;
-    background-color: rgb(26, 23, 23);
-}
-
 .buttons {
     position: absolute;
     top: 2rem;
     left: 54rem;
     display: none;
 }
-
-.trail-picture {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    size: 25px;
-}
-
-#trail-map {
-    position: absolute;
-    bottom: 16rem;
-    left: 16px;
-    height: 40%;
-    width: 40%;
-}
-
 
 /*................................................... Hero Image*/
 
