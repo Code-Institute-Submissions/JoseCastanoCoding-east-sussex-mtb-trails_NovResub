@@ -4,7 +4,7 @@ let map;
 function initMap(location) {
     map = new google.maps.Map(document.getElementById("trail-map"), {
         center: location["coords"],
-        zoom: 4,
+        zoom: 6,
     });
 
     const marker = new google.maps.Marker({

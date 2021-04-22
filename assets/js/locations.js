@@ -13,7 +13,7 @@ const locations = {
         Image: "assets/images/friston-forest.jpg",
         Uphill: "17.88km",
         Downhill: "12.67km",
-        Tips: "Ride those famous and steep 'bomholes' in each trail!"
+        Tips: "Ride those famous and steep bombholes in each trail!"
     },
     surreyHills: {
         displayName: "Surrey Hills",
