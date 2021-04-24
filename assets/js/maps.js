@@ -1,16 +1,14 @@
-
-let map;
-
 function initMap(location) {
-    map = new google.maps.Map(document.getElementById("trail-map"), {
-        center: location["coords"],
-        zoom: 6,
-    });
+    if (location !== undefined) {
 
-    const marker = new google.maps.Marker({
-        position: location["coords"],
-        map: map,
-    });
+        let map = new google.maps.Map(document.getElementById("trail-map"), {
+            center: location["coords"],
+            zoom: 6,
+        });
+
+        new google.maps.Marker({
+            position: location["coords"],
+            map: map,
+        });
+    }
 }
-
-

@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
+
 body {
     font-family: 'Space Grotesk', sans-serif;
+    height: 100vh;
+    background: url(/assets/images/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 * {
@@ -11,27 +18,20 @@ body {
     box-sizing: border-box;
 }
 
-/*....................Colour Scheme................................*/
 
-#top-heading {
-    background-color: rgb(26, 23, 23);
-}
+/*....................Colour Scheme................................*/
 
 #header {
     color: #ff3b00eb;
     text-transform: uppercase;
     letter-spacing: 4px;
+    background: rgb(26, 26, 23);
 }
 
 
 /*................................................... Colour Scheme*/
 
 /*....................Main Heading................................*/
-
-#top-heading {
-    padding-bottom: 35px;
-    padding-top: 35px;
-}
 
 #logo-and-heading {
     display: flex;
@@ -44,20 +44,11 @@ body {
 
 /*....................Hero Image................................*/
 
-.hero-image {
-    height: 100vh;
-    background: url(/assets/images/hero-image.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
 .hero-text-dropdown {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 16%;
+    top: 30%;
     left: 25%;
     transform: translate(-50%, -50%);
     color: white;
@@ -66,23 +57,25 @@ body {
 
 .hero-text-trailHeading {
     position: absolute;
-    top: 16%;
-    left: 79%;
+    top: 38%;
+    left: 80%;
     transform: translate(-50%, -50%);
     color: #ff3b00eb;
     background-color: rgb(26, 23, 23);
 }
 
-.hero-text-trailPicture {
+.trailImage {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 80%;
+    width: 400px;
+    height: 400px;
     transform: translate(-50%, -50%);
 }
 
 .hero-text-map {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 20%;
     height: 400px;
     width: 400px;
@@ -90,13 +83,13 @@ body {
 }
 
 .hero-text-emailForm {
-    display: none;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     height: 400px;
     width: 400px;
     transform: translate(-50%, -50%);
+    display: none;
 }
 
 .form-label {
@@ -160,3 +153,89 @@ body {
 }
 
 /*................................................... Footer*/
+
+/*....................Media queries................................*/
+
+@media (max-width: 576px) {
+
+    body {
+        background-position: bottom;
+        background-repeat: unset;
+    }
+
+    .hero-text-dropdown {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 17px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+    #header {
+        display: none;
+    }
+
+    #logo-and-heading {
+        padding-left: 75px;
+    }
+
+    .hero-text-trailHeading {
+        position: absolute;
+        top: 78%;
+        left: 50%;
+        font-size: 17px;
+        transform: translate(-50%, -50%);
+    }
+
+    .trailImage {
+        position: absolute;
+        top: 106%;
+        left: 50%;
+        width: 250px;
+        height: 250px;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-text-map {
+        position: absolute;
+        top: 153%;
+        left: 50%;
+        width: 250px;
+        height: 250px;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-text-emailForm {
+        position: absolute;
+        top: 196%;
+        left: 50%;
+        height: 250px;
+        width: 250px;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .hero-text-dropdown {
+        top: 30%;
+        left: 36%;
+        font-size: 14px;
+    }
+
+    .hero-text-trailHeading {
+        left: 83%;
+    }
+
+    .hero-text-emailForm {
+        top: 113%;
+    }
+
+    .body {
+        background-position: bottom;
+        background-repeat: unset;
+    }
+
+}

@@ -6,10 +6,10 @@ function sendMail(contactForm) {
     })
         .then(
             function (response) {
-                console.log("SUCCESS", response);
+                document.getElementById("emailForm-message").innerHTML = "Thanks for your message! We will be in touch shortly.";
             },
             function (error) {
-                console.log("FAILED", error);
+                document.getElementById("emailForm-message").innerHTML = "Oops! Something went wrong...";
             });
     return false;
 }

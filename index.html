@@ -16,9 +16,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
         (function () {
             emailjs.init("user_3bq7G1fB27mG94EvyJnZD");
         })();
@@ -27,9 +27,7 @@
 
 <body>
 
-    <!--Heading-->
-
-    <section class="container-fluid" id="top-heading">
+    <section class="container-fluid">
         <div id="logo-and-heading">
             <div>
                 <a href="index.html"><img src="assets/images/logo.PNG" alt="logo" style="padding-right: 75px;"></a>
@@ -40,10 +38,84 @@
         </div>
     </section>
 
+    <div class="hero-text-dropdown">
+        <form style="margin-bottom: 35px;">
+            <b class="bold-text">So, how good are you at riding your mtb?</b>
+            <select id="skill-level" onchange="getPark();">
+                <option disabled selected>What's your skill level?</option>
+                <option value="Begginer">Begginer</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+        </form>
+        <form style="margin-bottom: 35px;">
+            <b class="bold-text">What's your current shape?</b>
+            <select id="fitness-level" onchange="getPark();">
+                <option disabled selected>What's your fitness level?</option>
+                <option value="Average">Average</option>
+                <option value="Fit">Fit</option>
+                <option value="SuperFit">Super Fit!</option>
+            </select>
+        </form>
+        <p class="bold-text"><b>Your recommended mtb trail is:</b>
+            <input type="text" id="trailChoice" size="20">
+        </p>
+    </div>
+    <div class="hero-text-trailHeading">
+        <h1 id="trail-heading"></h1>
+    </div>
+    <img src="" alt="" id="picture" class="d-none trailImage">
+    <div class="hero-text-emailForm">
+        <form onsubmit="return sendMail(this);">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Your
+                    name</label>
+                <input type="text" name="name" class="form-control" id="exampleFormControlInput1"
+                    placeholder="your name here" required />
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Your email address</label>
+                <input type="email" name="emailAddress" class="form-control" id="exampleFormControlInput2"
+                    placeholder="name@example.com" required />
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">What do you want to know about <span
+                        id="location-form"></span>?</label>
+                <textarea class="form-control" name="userQuestion" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="your message here" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Send</button>
+            <p id="emailForm-message"></p>
+        </form>
+    </div>
+    <div class="buttons">
+        <button id="uphill">Uphill Distance</button>
+        <button id="downhill">Downhill Distance</button>
+        <button id="tips">Tips For The Trail!</button>
+    </div>
+    <div class="hero-text-map" id="trail-map">
+
+    </div>
+
+    </div>
+
+    <!--Heading-->
+    <!--
+    <section class="container-fluid" id="top-heading">
+        <div id="logo-and-heading">
+            <div>
+                <a href="index.html"><img src="assets/images/logo.PNG" alt="logo" style="padding-right: 75px;"></a>
+            </div>
+            <div>
+                <h1 id="header">East Sussex MTB Trails</h1>
+            </div>
+        </div>
+    </section>
+    -->
     <!--/. Heading -->
 
     <!--Main image and drop-down menus to choose from-->
-
+    <!--
     <div class="hero-image">
         <div class="hero-text-dropdown">
             <form style="margin-bottom: 35px;">
@@ -71,9 +143,7 @@
         <div class="hero-text-trailHeading">
             <h1 id="trail-heading"></h1>
         </div>
-        <div class="hero-text-trailPicture">
-            <img src="" alt="" id="picture" width="400px" height="400px">
-        </div>
+        <img src="" alt="" id="picture" class="d-none trailImage">
         <div class="hero-text-emailForm">
             <form onsubmit="return sendMail(this);">
                 <div class="mb-3">
@@ -88,12 +158,13 @@
                         placeholder="name@example.com" required />
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">What do you want to know about<span
+                    <label for="exampleFormControlTextarea1" class="form-label">What do you want to know about <span
                             id="location-form"></span>?</label>
                     <textarea class="form-control" name="userQuestion" id="exampleFormControlTextarea1" rows="3"
                         placeholder="your message here" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg">Send</button>
+                <p id="emailForm-message"></p>
             </form>
         </div>
         <div class="buttons">
@@ -106,9 +177,10 @@
         </div>
 
     </div>
+    -->
 
     <!--Footer-->
-
+    <!--
     <footer class="container-fluid" id="footer">
         <div id="trademark-and-message">
             <div>
@@ -119,7 +191,7 @@
             </div>
         </div>
     </footer>
-
+    -->
     <!--/. Footer -->
 
 
@@ -127,13 +199,13 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
     <script src="assets/js/mail.js"></script>
-    <script src="assets/js/maps.js" type="text/javascript"></script>
+    <script src="assets/js/maps.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFWvwW7soq4FvEw_A-AUOHh2BeJKNgaI&callback=initMap&libraries=&v=weekly"
         async></script>
 
-    <script src="assets/js/locations.js" type="text/javascript"></script>
-    <script src="assets/js/script.js" type="text/javascript"></script>
+    <script src="assets/js/locations.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 

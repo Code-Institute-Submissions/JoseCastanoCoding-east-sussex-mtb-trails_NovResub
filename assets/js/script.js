@@ -7,6 +7,7 @@ function getPark() {
 
     const trailChoice = document.getElementById("trailChoice");
     const trailHeading = document.getElementById("trail-heading");
+    const imageBox = document.getElementById("picture");
     let location;
 
 
@@ -31,10 +32,25 @@ function getPark() {
     };
     trailChoice.value = location.displayName;
     trailHeading.textContent = location.displayName;
-    document.getElementById("picture").setAttribute("src", location["Image"]);
-    initMap(location) = document.getElementById("trail-map").setAttribute("trail-map", location["coords"]);
+    document.getElementById("picture").setAttribute("src", location["image"]);
+    initMap(location);
+    displayCards(location);
+    displayEmailForm(location);
+    imageBox.classList.remove("d-none");
 };
 
+function displayCards(location) {
+    document.getElementById("uphill").innerHTML = location["uphill"];
+    document.getElementById("downhill").innerHTML = location["downhill"];
+    document.getElementById("tips").innerHTML = location["tips"];
+
+    document.getElementsByClassName("buttons")[0].style.display = "block";
+};
+
+function displayEmailForm(location) {
+    document.getElementsByClassName("hero-text-emailForm")[0].style.display = "block";
+    document.getElementById("location-form").innerHTML = location.displayName;
+};
 
 
 
