@@ -18,6 +18,11 @@ body {
     box-sizing: border-box;
 }
 
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 /*....................Colour Scheme................................*/
 
@@ -71,6 +76,7 @@ body {
     width: 400px;
     height: 400px;
     transform: translate(-50%, -50%);
+
 }
 
 .hero-text-map {
@@ -131,6 +137,10 @@ body {
 
 #footer {
     background-color: rgb(26, 23, 23);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
 }
 
 #footer-message {
@@ -176,10 +186,6 @@ body {
         display: none;
     }
 
-    #logo-and-heading {
-        padding-left: 75px;
-    }
-
     .hero-text-trailHeading {
         position: absolute;
         top: 78%;
@@ -215,27 +221,60 @@ body {
         transform: translate(-50%, -50%);
         display: none;
     }
+
+    #footer {
+        bottom: -155%;
+    }
+
+    .fas {
+        display: none;
+    }
+
+    .bold-text {
+        border: none;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
 
     .hero-text-dropdown {
-        top: 30%;
+        top: 25%;
         left: 36%;
         font-size: 14px;
     }
 
     .hero-text-trailHeading {
-        left: 83%;
+        left: 76%;
+        top: 29%;
     }
 
     .hero-text-emailForm {
-        top: 113%;
+        position: absolute;
+        top: 87%;
+        height: 533px;
+        transform: translate(-50%, -50%);
     }
 
-    .body {
-        background-position: bottom;
-        background-repeat: unset;
+    .trailImage {
+        position: absolute;
+        top: 48%;
+        left: 78%;
+        width: 300px;
+        height: 250px;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-text-map {
+        position: absolute;
+        top: 48%;
+        left: 21%;
+        width: 300px;
+        height: 250px;
+        transform: translate(-50%, -50%);
+    }
+
+    .fas {
+        display: none;
     }
 
 }

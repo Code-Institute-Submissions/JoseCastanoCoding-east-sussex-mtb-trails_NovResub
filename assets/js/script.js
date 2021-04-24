@@ -8,6 +8,7 @@ function getPark() {
     const trailChoice = document.getElementById("trailChoice");
     const trailHeading = document.getElementById("trail-heading");
     const imageBox = document.getElementById("picture");
+
     let location;
 
 
@@ -37,6 +38,8 @@ function getPark() {
     displayCards(location);
     displayEmailForm(location);
     imageBox.classList.remove("d-none");
+    document.getElementById("trail-map").style.border = "3px solid #ff3b00eb";
+    document.getElementById("picture").style.border = "3px solid #ff3b00eb";
 };
 
 function displayCards(location) {
