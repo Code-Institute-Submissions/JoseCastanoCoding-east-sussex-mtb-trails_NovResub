@@ -27,45 +27,76 @@
 
 <body>
 
-    <section class="container-fluid">
-        <div id="logo-and-heading">
-            <div>
-                <a href="index.html"><img src="assets/images/logo.PNG" alt="logo"></a>
+    <!-- Logo and heading -->
+
+    <div class="container container-heading">
+        <a href="index.html" class="logo"><img src="assets/images/logo.PNG" alt="logo"></a>
+        <h1 class="header">East Sussex MTB Trails</h1>
+    </div>
+
+    <!--/. Logo and heading -->
+
+    <!-- Forms -->
+
+    <section class="forms">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form style="margin-bottom: 35px;">
+                        <b class="bold-text">So, how good are you at riding your mtb? </b>
+                        <select id="skill-level" onchange="getPark();">
+                            <option disabled selected>What's your skill level?</option>
+                            <option value="Begginer">Begginer</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                    </form>
+                </div>
             </div>
-            <div>
-                <h1 id="header">East Sussex MTB Trails</h1>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form style="margin-bottom: 35px;">
+                        <b class="bold-text">What's your current shape? </b>
+                        <select id="fitness-level" onchange="getPark();">
+                            <option disabled selected>What's your fitness level?</option>
+                            <option value="Average">Average</option>
+                            <option value="Fit">Fit</option>
+                            <option value="SuperFit">Super Fit!</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form style="margin-bottom: 35px;">
+                        <b class="bold-text">Your recommended mtb trail is: </b>
+                        <input type="text" id="trailChoice" size="20">
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="hero-text-dropdown">
-        <form style="margin-bottom: 35px;">
-            <b class="bold-text">So, how good are you at riding your mtb?</b>
-            <select id="skill-level" onchange="getPark();">
-                <option disabled selected>What's your skill level?</option>
-                <option value="Begginer">Begginer</option>
-                <option value="Intermediate">Intermediate</option>
-                <option value="Advanced">Advanced</option>
-            </select>
-        </form>
-        <form style="margin-bottom: 35px;">
-            <b class="bold-text">What's your current shape?</b>
-            <select id="fitness-level" onchange="getPark();">
-                <option disabled selected>What's your fitness level?</option>
-                <option value="Average">Average</option>
-                <option value="Fit">Fit</option>
-                <option value="SuperFit">Super Fit!</option>
-            </select>
-        </form>
-        <form style="margin-bottom: 35px;">
-            <b class="bold-text">Your recommended mtb trail is:</b>
-            <input type="text" id="trailChoice" size="20">
-        </form>
+    <!--/. Forms -->
+
+    <div class="row hero-text-trailHeading">
+        <div class="col-12">
+            <h1 id="trail-heading"></h1>
+        </div>
     </div>
-    <div class="hero-text-trailHeading">
-        <h1 id="trail-heading"></h1>
+
+    <div class="row">
+        <div class="col-12 col-sm-4 col-md-6 col-lg-12">
+            <img src="" alt="" id="picture" class="d-none trailImage">
+        </div>
     </div>
-    <img src="" alt="" id="picture" class="d-none trailImage">
+
     <div class="hero-text-emailForm">
         <form onsubmit="return sendMail(this);">
             <div class="mb-3">

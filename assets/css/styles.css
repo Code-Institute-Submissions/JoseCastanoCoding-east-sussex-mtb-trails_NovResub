@@ -8,6 +8,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -18,15 +19,14 @@ body {
     box-sizing: border-box;
 }
 
-.container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
+.container {
+    display: flex;
 }
 
 
 /*....................Colour Scheme................................*/
 
-#header {
+.header {
     color: #ff3b00eb;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -38,26 +38,20 @@ body {
 
 /*....................Main Heading................................*/
 
-#logo-and-heading {
-    display: flex;
+.container-heading {
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
 }
 
 /*................................................... Main Heading*/
 
-/*....................Hero Image................................*/
+/*....................Forms................................*/
 
-.hero-text-dropdown {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: white;
+.forms {
     font-size: 20px;
+    padding-top: 35px;
 }
 
 .hero-text-trailHeading {
@@ -168,22 +162,22 @@ body {
 
 @media (max-width: 576px) {
 
-    body {
-        background-position: bottom;
-        background-repeat: unset;
+    .body {
+        height: 88vh;
     }
 
-    .hero-text-dropdown {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-size: 17px;
-        text-align: center;
-        transform: translate(-50%, -50%);
+    .container-heading {
+        padding-top: 10px;
+        justify-content: center;
+        align-items: center;
     }
 
-    #header {
+    .header {
         display: none;
+    }
+
+    .forms {
+        font-size: 17px;
     }
 
     .hero-text-trailHeading {
@@ -236,12 +230,6 @@ body {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-
-    .hero-text-dropdown {
-        top: 25%;
-        left: 36%;
-        font-size: 14px;
-    }
 
     .hero-text-trailHeading {
         left: 76%;
