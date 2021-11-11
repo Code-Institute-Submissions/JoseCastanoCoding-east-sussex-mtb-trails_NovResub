@@ -93,6 +93,13 @@ body {
     display: none;
 }
 
+#emailForm-message {
+    color: #ff3b00eb;
+    background-color: rgb(26, 23, 23);
+    text-align: center;
+    margin-top: 10px;
+}
+
 .form-label {
     margin-bottom: .5rem;
     background: rgb(26, 23, 23);
