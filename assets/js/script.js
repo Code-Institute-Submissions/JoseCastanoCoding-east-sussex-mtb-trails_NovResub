@@ -55,6 +55,10 @@ function displayEmailForm(location) {
     document.getElementById("location-form").innerHTML = location.displayName;
 };
 
+function displayTrailInformation(location) {
+    document.get
+}
+
 
 
 
