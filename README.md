@@ -24,14 +24,12 @@ The website has been designed to be responsive, intuitive and accessible on a ra
     
 2. [**Features**](#features)
     - [**Existing features**](#existing-features)
-    - [**Features left to implement**](#features-left-to-implement)
 
 3. [**Technologies Used**](#technologies-used)
 
 4. [**Testing**](#testing)
     - [**Testing User Stories**](#testing-user-stories)
     - [**Bugs and some other challenges**](#bugs-and-some-other-challenges)
-    - [**Final layout**](#final-layout)
 
 5. [**Deployment**](#deployment)
     - [**GitHub Pages**](#github-pages)
@@ -39,7 +37,6 @@ The website has been designed to be responsive, intuitive and accessible on a ra
     - [**Making a Local Clone**](#making-a-local-clone)
 
 6. [**Credits**](#credits)
-    - [**Content**](#content)
     - [**Resources**](#resources)
     - [**Acknowledgements**](#acknowledgements)
 
@@ -221,12 +218,6 @@ The site counts with 1 pages in total, where the user can choose from two
 ### Bugs and some other challenges    
 
 On large screens, the paragraphs displaying the uphill & downhill distance as well as the tips for each trail slightly overlaps one of the forms.
-
-### Final layout
-
- - Home Page: I introduced the carousel slider instead of a static photo, as per my wireframe I drew back when I was starting the project.
- - Shop: I deployed a dropdown menu with all the sections of the shop, rather than displaying them all on a single page.
-
 
 ##### back to [contents](#table-of-contents)
 
