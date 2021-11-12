@@ -148,10 +148,6 @@ The site counts with 1 pages in total, where the user can choose from two
     - 2.2 The distance to cover going downhill.
     - 2.3 Tips about Surrey Hills trails.
 - The home page will, also, display a google maps api integration and a contact form, using mailjs api integration to get in touch with us to find out more about the trails at Surrey Hills.
-
-### Features left to implement
-
-- 
   
  ##### back to [contents](#table-of-contents)
 
@@ -187,23 +183,16 @@ The site counts with 1 pages in total, where the user can choose from two
 
  The results of such test can be seen as below:
 
- <img src="assets/images/readme-images-and-documentation/loadingspeed.PNG" width="400" height="300" />
+ <img src="assets/images/pingdomSpeedResults.PNG" width="400" height="300" />
 
- - [W3C CSS Validator - Results](https://jigsaw.w3.org/css-validator/validator)
- - [W3C Markup Validator - Results](https://validator.w3.org/nu/#textarea)
+ - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+ - [W3C Markup Validator](https://validator.w3.org/)
 
- In regards to the HTML markup, I encountered one error that even though it did not affect the functionality of the site, it was marked as non-valid code, see below:
+ In regards to the HTML markup, I encountered a couple of warnings that even though it did not affect the functionality of the site, see below:
 
- <img src="assets/images/readme-images-and-documentation/errorhtml.PNG" width="1000" height="300" />
+ <img src="assets/images/htmlWarnings.PNG" width="1000" height="300" />
 
- After trying numerous types of fixes, I eventually managed to cut some code from [Bootstrap navbar documentation](https://getbootstrap.com/docs/5.0/components/dropdowns/) and embedded it onto my existing navbar code I previously extracted from Bootstrap. The problem of a div element being a child of an ul was solved
- by changing the div element by a li, which will perfectly fit as a child of an ul. My original classes and id's were kept as they did not need to change at all.
-
- You can check my clean, no-errors HTML [here](https://validator.w3.org/nu/#textarea)
-
- In regards to the CSS, no errors. Please see below: 
-
- <img src="assets/images/readme-images-and-documentation/cssresults.PNG" width="1000" height="300" />
+ In regards to the CSS, no errors. 
 
  - [Responsive Web Design](http://ami.responsivedesign.is/)
 
@@ -213,33 +202,25 @@ The site counts with 1 pages in total, where the user can choose from two
 
 -  ### <h3>First Time Visitor Goals</h3>
 
-    1. As a First Time Visitor, I want to browse through the catalogue of products and make enquiries for items I want to purchase.
-        - This has been tested and an user will be more than able to browse through the sections of the shop and select any items, by clicking on the call-to-action buttons to buy the product.
-    2. As a First Time Visitor, I want to analyse the site and evaluate how easy it is to navigate throught it in order to check the products and content.
-        - Navigation menu works perfectly, and each section has an underline efect to make sure the user sees where he/she goes next. On smaller devices such as smartphones, the menu will toggle and
-        still will have all the functionality an user needs.
-    3. As a First Time Visitor, I want to verify testimonials about the quality of the service and find out what real people think about the website. I will also corroborate
-        all their social media channels by clicking on the social media icons displayed on the site, with the aim of getting a deeper insight of their followings on each of the social
-        media platforms they are part of.
-        - Testimonials are shown right on the home page, and all the links to social media channels are working accordingly.
+    1. As a First Time Visitor, I want to find out which mountain bike trail I should be attempting to ride, based on my current level of skills and fitness. Once I know which trail is suitable for me, I want to make some notes of the key characteristics of such trail.
+        - This has been tested and an user will be more than able to identify which trail will be suitable to ride, according to their choices regarding level of skills and fitness.
+    2. As a First Time Visitor, I want to plan directions to get to the location where the mountain bike trail is.
+        - Map displays prefectly, giving the user the exact location of the trail.
+    3. As a First Time Visitor, I want to get in touch with the real people behind East Sussex MTB Trails, and ask some questions about a particular trail.
+        - An email form displays accordingly, and a message shows whether or not the form has been correctly filled in.
 
 -  ### <h3>Returning Visitor Goals</h3>
 
-    1. As a Returning Visitor, I might want to place an order or follow up on an enquiry I recently made.
-        - All buttons to buy products are fully working so the user will be more than able to perfom such action.
-    2. As a Returning Visitor, I want to check any possible new releases or products available on the website.
-        - The website will be updated with new products on a daily basis so users can come back and check the latest releases.
-    3. As a Returning Visitor, I want to keep up with any promotions running via the official social media accounts of The Vinyl Aficionado website.
-        - Social media channels will always be available for the users just by clicking on the links provided on the site.
+    1. As a Returning Visitor, since my set of skills and fitness level might have changed from my first visit, I could be using this site to check out other trails to ride, and make some notes about the key characteristics of the new trail I would like to ride.
+        - An user can return to the site and try other choices.
+    2. As a Returning Visitor, I might want to plan directions to get to the location where any other trails are.
+        - The map will enable users to perform these actions.
+    3. As a Returning Visitor, I would like to keep interacting with the owners of the site, by sending them an enquiry about anything in regards to the information displayed about the trail, location or key characteristics of it.
+        - The email form will enable users to perform these actions.
 
 ### Bugs and some other challenges    
 
-One of the navigation items (shop) tends to come off the alignment with the rest of the items. I managed to apply some padding and center it with the rest of items. However, I have
-noticed that, when being in one of the pages of the shop, the item comes off although we are probably talking a quarter of a cm.
-
-The Carousel slider from bootstrap was challenging and I very much enjoyed breaking down the code and implementing a first slide that will be the main sign of identity of my website, visually speaking.
-
-The markup of my HTML showed (as previously mentioned) a piece of non-valid code. I was able to fix the issue by using the following [Bootstrap navbar documents](https://getbootstrap.com/docs/5.0/components/dropdowns/)
+On large screens, the paragraphs displaying the uphill & downhill distance as well as the tips for each trail slightly overlaps one of the forms.
 
 ### Final layout
 
@@ -291,11 +272,6 @@ If you prefer working on the repository locally, you can clone the repository to
 ---
 ## Credits
 
-### Content
-
-- [The Record Bloke](https://therecordbloke.com) 
-- [Wasted Heroes](https://www.wastedheroes-shop.com/)
-
 ### Resources
 
 - [Code Institute](https://learn.codeinstitute.net/)
@@ -309,11 +285,10 @@ If you prefer working on the repository locally, you can clone the repository to
 - [Stack Overflow](https://stackoverflow.com/)
 - [Hover.css](https://ianlunn.github.io/Hover/#effects)
 - [CSS Gradient](https://cssgradient.io/gradient-backgrounds/)
+- [jQuery](https://jquery.com/)
 
 ### Acknowledgements
 
-- [The Record Bloke](https://therecordbloke.com) 
-- [Wasted Heroes](https://www.wastedheroes-shop.com/)
 - Various people at the [code institute](https://codeinstitute.net/) and on the code institute Slack channel.
 - Various people at [LinkedIn](https://www.linkedin.com/)
 - My career consultant Stuart Crang.
