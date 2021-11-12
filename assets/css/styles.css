@@ -126,11 +126,18 @@ body {
     white-space: nowrap;
 }
 
-.buttons {
+.paragraphs {
+    text-align: center;
     position: absolute;
-    top: 2rem;
-    left: 54rem;
+    top: 7rem;
+    left: 67rem;
     display: none;
+    text-transform: uppercase;
+    background-color: rgb(26, 23, 23);
+    color: #ff3b00eb;
+    border: 2px solid;
+    border-color: #ff3b00eb;
+    white-space: nowrap;
 }
 
 /*................................................... Hero Image*/
@@ -175,6 +182,14 @@ body {
 
     .header {
         display: none;
+    }
+
+    .paragraphs {
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        font-size: 13px;
+        transform: translate(-50%, -50%);
     }
 
     .container-heading {
@@ -249,6 +264,14 @@ body {
         align-items: center;
     }
 
+    .paragraphs {
+        position: absolute;
+        top: 61%;
+        left: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+    }
+
     .header {
         font-size: 24px;
         text-align: center;
@@ -319,6 +342,14 @@ body {
         text-align: center;
     }
 
+    .paragraphs {
+        position: absolute;
+        top: 61%;
+        left: 50%;
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+    }
+
     .forms {
         font-size: 17px;
     }
@@ -372,6 +403,16 @@ body {
 }
 
 @media (min-width: 992px) and (max-width: 1279px) {
+
+    .paragraphs {
+        position: absolute;
+        top: 22%;
+        left: 83%;
+        font-size: 11px;
+        transform: translate(-50%, -50%);
+    }
+
+
     .trailImage {
         position: absolute;
         top: 65%;
@@ -415,6 +456,10 @@ body {
 }
 
 @media only screen and (min-width: 1280px) {
+
+    .paragraphs {
+        left: 55rem;
+    }
 
     .trailImage {
         position: absolute;

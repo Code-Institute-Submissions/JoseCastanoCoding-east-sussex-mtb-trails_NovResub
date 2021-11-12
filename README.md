@@ -172,8 +172,6 @@ The site counts with 1 pages in total, where the user can choose from two
 
 - Icons : [Fontawesome](https://fontawesome.com/)
 
-- Hover effects : [Hover.css](https://ianlunn.github.io/Hover/#effects)
-
 - Colour Picker : [colourpicker](https://www.w3schools.com/colors/colors_picker.asp)
 
 - RGB Generator : [rgbgenerator](https://www.coolgenerator.com/rgb-color-generator)
@@ -270,7 +268,7 @@ The project was deployed to GitHub Pages using the following steps...
 You may wish to contribute to this website and have your contribution published, if so, you are welcome to follow these steps below.
 
 1. Log in to GitHub and locate the GitHub Repository
-2. Open https://josecastanocoding.github.io/the-vinyl-aficionado/ 
+2. Open https://josecastanocoding.github.io/east-sussex-mtb-trails/ 
 3. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 4. You should now have a copy of the original repository in your GitHub account.
 
@@ -278,7 +276,7 @@ You may wish to contribute to this website and have your contribution published,
 
 If you prefer working on the repository locally, you can clone the repository to your desktop by the following steps.
 
-1. Go to [the vinyl aficionado github page](https://josecastanocoding.github.io/the-vinyl-aficionado/)
+1. Go to [the east sussex mtb trails github page](https://github.com/JoseCastanoCoding/east-sussex-mtb-trails)
 2. Under the repository name, click "Clone or download".
 3. - To clone the repository using HTTPS, under "Clone with HTTPS", click the paste icon. 
    - To clone the repository using an SSH key, click Use SSH, then click the paste icon. 
