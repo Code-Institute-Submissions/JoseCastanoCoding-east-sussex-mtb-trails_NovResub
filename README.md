@@ -4,7 +4,7 @@
 
 [View the live project here](https://josecastanocoding.github.io/east-sussex-mtb-trails/)
 
-<img src="" width="600" height="400" />
+<img src="assets/images/responsiveDesign.PNG" width="600" height="400" />
 
 East Sussex MTB Trails is a website aimed to help mountain bike riders to find new trails to ride in East Sussex, UK. The visitors will be given the option to select both their skill and fitness levels, the site will collate the choices of each visitor, and return the best trail that suits the rider selections. 
 

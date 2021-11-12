@@ -35,19 +35,17 @@ function getPark() {
     trailHeading.textContent = trail.displayName;
     document.getElementById("picture").setAttribute("src", trail["image"]);
     initMap(trail);
-    displayCards(trail);
     displayEmailForm(trail);
     imageBox.classList.remove("d-none");
     document.getElementById("trail-map").style.border = "3px solid #ff3b00eb";
     document.getElementById("picture").style.border = "3px solid #ff3b00eb";
+    document.getElementsByClassName("buttons")[0].style.display = "block";
 };
 
 function displayCards(trail) {
     document.getElementById("uphill").innerHTML = trail["uphill"];
     document.getElementById("downhill").innerHTML = trail["downhill"];
     document.getElementById("tips").innerHTML = trail["tips"];
-
-    document.getElementsByClassName("buttons")[0].style.display = "block";
 };
 
 function displayEmailForm(trail) {

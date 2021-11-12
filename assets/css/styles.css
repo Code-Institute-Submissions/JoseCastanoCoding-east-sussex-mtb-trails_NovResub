@@ -130,6 +130,7 @@ body {
     position: absolute;
     top: 2rem;
     left: 54rem;
+    display: none;
 }
 
 /*................................................... Hero Image*/
