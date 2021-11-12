@@ -1,13 +1,13 @@
-function initMap(location) {
-    if (location !== undefined) {
+function initMap(trail) {
+    if (trail !== undefined) {
 
         let map = new google.maps.Map(document.getElementById("trail-map"), {
-            center: location["coords"],
+            center: trail["coords"],
             zoom: 6,
         });
 
         new google.maps.Marker({
-            position: location["coords"],
+            position: trail["coords"],
             map: map,
         });
     }

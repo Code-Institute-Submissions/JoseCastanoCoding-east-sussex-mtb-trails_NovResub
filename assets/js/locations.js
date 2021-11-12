@@ -1,4 +1,4 @@
-const locations = {
+const trails = {
     stanmerPark: {
         displayName: "Stanmer Park",
         coords: { lat: 50.867329864, lng: -0.101832926 },

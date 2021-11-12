@@ -2,7 +2,7 @@
 
 <h2>2nd Milestone Project</h2>
 
-[View the live project here](https://)
+[View the live project here](https://josecastanocoding.github.io/east-sussex-mtb-trails/)
 
 <img src="" width="600" height="400" />
 

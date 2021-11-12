@@ -9,56 +9,53 @@ function getPark() {
     const trailHeading = document.getElementById("trail-heading");
     const imageBox = document.getElementById("picture");
 
-    let location;
+    let trail;
 
 
-    if (skillDropdownValue === "Begginer" && fitnessDropdownValue === "Average") {
-        location = locations["stanmerPark"];
-    } else if (skillDropdownValue === "Begginer" && fitnessDropdownValue === "Fit") {
-        location = locations["stanmerPark"];
-    } else if (skillDropdownValue === "Begginer" && fitnessDropdownValue === "SuperFit") {
-        location = locations["fristonForest"];
+    if (skillDropdownValue === "Beginner" && fitnessDropdownValue === "Average") {
+        trail = trails["stanmerPark"];
+    } else if (skillDropdownValue === "Beginner" && fitnessDropdownValue === "Fit") {
+        trail = trails["stanmerPark"];
+    } else if (skillDropdownValue === "Beginner" && fitnessDropdownValue === "SuperFit") {
+        trail = trails["fristonForest"];
     } else if (skillDropdownValue === "Intermediate" && fitnessDropdownValue === "Average") {
-        location = locations["stanmerPark"];
+        trail = trails["stanmerPark"];
     } else if (skillDropdownValue === "Intermediate" && fitnessDropdownValue === "Fit") {
-        location = locations["fristonForest"];
+        trail = trails["fristonForest"];
     } else if (skillDropdownValue === "Intermediate" && fitnessDropdownValue === "SuperFit") {
-        location = locations["surreyHills"];
+        trail = trails["surreyHills"];
     } else if (skillDropdownValue === "Advanced" && fitnessDropdownValue === "Average") {
-        location = locations["stanmerPark"];
+        trail = trails["stanmerPark"];
     } else if (skillDropdownValue === "Advanced" && fitnessDropdownValue === "Fit") {
-        location = locations["fristonForest"];
+        trail = trails["fristonForest"];
     } else if (skillDropdownValue === "Advanced" && fitnessDropdownValue === "SuperFit") {
-        location = locations["surreyHills"];
+        trail = trails["surreyHills"];
     };
-    trailChoice.value = location.displayName;
-    trailHeading.textContent = location.displayName;
-    document.getElementById("picture").setAttribute("src", location["image"]);
-    initMap(location);
-    displayCards(location);
-    displayEmailForm(location);
+    trailChoice.value = trail.displayName;
+    trailHeading.textContent = trail.displayName;
+    document.getElementById("picture").setAttribute("src", trail["image"]);
+    initMap(trail);
+    displayCards(trail);
+    displayEmailForm(trail);
     imageBox.classList.remove("d-none");
     document.getElementById("trail-map").style.border = "3px solid #ff3b00eb";
     document.getElementById("picture").style.border = "3px solid #ff3b00eb";
 };
 
-function displayCards(location) {
-    document.getElementById("uphill").innerHTML = location["uphill"];
-    document.getElementById("downhill").innerHTML = location["downhill"];
-    document.getElementById("tips").innerHTML = location["tips"];
+function displayCards(trail) {
+    document.getElementById("uphill").innerHTML = trail["uphill"];
+    document.getElementById("downhill").innerHTML = trail["downhill"];
+    document.getElementById("tips").innerHTML = trail["tips"];
 
     document.getElementsByClassName("buttons")[0].style.display = "block";
 };
 
-function displayEmailForm(location) {
+function displayEmailForm(trail) {
     document.getElementsByClassName("hero-text-emailForm")[0].style.display = "block";
-    document.getElementById("location-form").innerHTML = location.displayName;
+    document.getElementById("location-form").innerHTML = trail.displayName;
 };
 
-function displayUphill() {
-    var btn = document.getElementById("uphill");
-    btn.addEventListener("click", displayUphill);
-}
+
 
 
 
