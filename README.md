@@ -92,11 +92,9 @@ I used the site [Unsplash](https://unsplash.com/) to download all my images, wit
 
 ## Wireframes
 
-All the wireframes I drew can be found in the following [link](/workspace/east-sussex-mtb-trails/wireframes)
+All the wireframes I drew can be found in the following [link](https://drive.google.com/file/d/1I5aTeuauP6dX7BXcyk2UEwv-AodJriGK/view?usp=sharing)
 
 ## Features
-
-The site counts with 1 pages in total, where the user can choose from two
 
 ### Existing Features
 
@@ -184,6 +182,7 @@ The site counts with 1 pages in total, where the user can choose from two
 
  - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
  - [W3C Markup Validator](https://validator.w3.org/)
+ - [JavaScript Validator](https://jshint.com/)
 
  In regards to the HTML markup, I encountered a couple of warnings that even though it did not affect the functionality of the site, see below:
 
